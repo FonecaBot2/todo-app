@@ -15,7 +15,7 @@ function Landing() {
         pruebas unitarias en los componentes más relevantes para asegurar su
         correcto funcionamiento.
       </p>
-      <Link to="todos" className="text-white hover:text-gray-300 mt-6">
+      <Link to="/todos" className="text-white hover:text-gray-300 mt-6">
         <Button
           variant="ghost"
           type="submit"
