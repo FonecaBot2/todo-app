@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import { create } from "zustand";
 
 type TimeStore = {
@@ -6,9 +7,9 @@ type TimeStore = {
 };
 
 export const useTimeStore = create<TimeStore>((set) => ({
-  currentTime: new Date().toLocaleString(),
+  currentTime: dayjs().locale("es").format("dddd, D MMMM YYYY"),
   fetchTime: () => {
-    const localTime = new Date().toLocaleString(); 
+    const localTime = dayjs().locale("es").format("dddd, D MMMM YYYY");
     set({ currentTime: localTime });
   },
 }));
