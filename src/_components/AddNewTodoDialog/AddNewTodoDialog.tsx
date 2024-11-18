@@ -21,6 +21,7 @@ const AddNewTodoDialog = () => {
     e.preventDefault();
     if (text.trim()) {
       addTodo(text);
+      alert('Todo added');
       setText("");
     }
   };

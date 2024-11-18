@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Pencil } from "lucide-react";
 
 type EditTodoDialogProps = {
-  todo: { id: number; title: string };
+  todo: { id: number; title: string, completed: boolean };
 };
 
 const EditTodoDialog: React.FC<EditTodoDialogProps> = ({ todo }) => {
@@ -27,6 +27,7 @@ const EditTodoDialog: React.FC<EditTodoDialogProps> = ({ todo }) => {
     if (text.trim()) {
       editTodo(todo.id, text);
       setText("");
+      alert('Todo updated');
     }
   };
 
@@ -37,6 +38,7 @@ const EditTodoDialog: React.FC<EditTodoDialogProps> = ({ todo }) => {
           variant="ghost"
           className="w-7 h-7 m-0 p-0 bg-zinc-800 text-teal-500 border-none hover:text-teal-600 hover:bg-zinc-800 hover:border-none focus:border-none"
           data-testid="edit-todo-button"
+          disabled={todo.completed}
         >
           <Pencil />
         </Button>
