@@ -20,6 +20,7 @@ const DeleteTodoDialog: React.FC<DeleteTodoDialogProps> = ({ todoId }) => {
 
   const handleDelete = () => {
     removeTodo(todoId);
+    alert('Todo deleted');
   };
 
   return (

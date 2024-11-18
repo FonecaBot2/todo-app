@@ -3,7 +3,7 @@ import "@testing-library/jest-dom";
 import EditTodoDialog from "./EditTodoDialog";
 
 describe("EditTodoDialog", () => {
-  const mockTodo = { id: 1, title: "Old Todo" };
+  const mockTodo = { id: 1, title: "Old Todo", completed: false };
 
   it("renders correctly", () => {
     render(<EditTodoDialog todo={mockTodo} />);
