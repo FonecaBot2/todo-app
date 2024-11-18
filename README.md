@@ -13,7 +13,7 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 
 1. Clona este repositorio en tu máquina:
    ```bash
-   git clone https://github.com/tu-usuario/todo-app.git
+   git clone https://github.com/FonecaBot2/todo-app.git
    cd todo-app
 2. Instala las dependencias del proyecto:
    ```bash
